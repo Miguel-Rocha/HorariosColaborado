@@ -15,8 +15,8 @@ import javax.swing.*;
  * @author Miguel Rocha
  */
 public class Conexion {
-    Connection conexion;
-    Statement consulta;
+    public Connection conexion;
+    public Statement consulta;
     public String ruta;
     
     public Conexion(){
@@ -36,5 +36,8 @@ public class Conexion {
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
+    }
+    public static void main(String[]args){
+        
     }
 }
